@@ -13,7 +13,7 @@ class Solution:
         for i in range(len(all_indexes) - 1):
             p1 = all_indexes[i]
             p2 = all_indexes[i + 1]
-            if p1[1] != p2[1]: # if the words are different
+            if p1[1] != p2[1]:  # if the words are different
                 shortest_distance = min(shortest_distance, p2[0] - p1[0])
 
         return shortest_distance
@@ -32,7 +32,11 @@ class Solution:
 
 s = Solution()
 assert s.merge_lists([[1, "a"], [3, "b"]], [[2, "c"], [5, "d"]]) == [
-    [1, "a"], [2, "c"], [3, "b"], [5, "d"]]
+    [1, "a"],
+    [2, "c"],
+    [3, "b"],
+    [5, "d"],
+]
 assert s.shortestDistance(["a", "b", "c", "d"], "a", "d") == 3
 assert s.shortestDistance(["b", "c", "d", "b"], "b", "d") == 1
 

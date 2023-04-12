@@ -4,6 +4,7 @@
 # otherwise. Note: The given sentence might contain other characters like
 # digits or spaces, your solution should handle these too.
 
+
 class Solution:
     def checkIfPangram(self, sentence):
         alphabet = map(lambda x: chr(x), range(ord("a"), ord("z") + 1))
