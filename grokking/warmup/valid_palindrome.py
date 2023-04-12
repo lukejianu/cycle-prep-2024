@@ -4,6 +4,7 @@
 # letters and numbers. Given a string s, return true if it is a
 # palindrome, or false otherwise.
 
+
 class Solution:
     def is_palindrome(self, s):
         cleaned_s = [c for c in s.lower() if ord("a") <= ord(c) <= ord("z")]

@@ -2,6 +2,7 @@
 # the nearest integer. The returned integer should be non-negative as well.
 # You must not use any built-in exponent function or operator
 
+
 class Solution:
     def mySqrt(self, x):
         l, r = 0, x + 1
