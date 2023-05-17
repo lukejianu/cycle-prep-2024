@@ -40,5 +40,8 @@ class Solution:
     def fillMerkleHashes(self, root, merkle_dict): 
         if not root:
             return None
-        merkle_dict[root] = f"#{root.val} {self.fillMerkleHashes(root.left, merkle_dict)} {self.fillMerkleHashes(root.right, merkle_dict)}"
+        merkle_dict[root] = ''.join(['#',
+                                     str(root.val),
+                                     str(self.fillMerkleHashes(root.left, merkle_dict)),
+                                     str(self.fillMerkleHashes(root.right, merkle_dict))])
         return merkle_dict[root]
